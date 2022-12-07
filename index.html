@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Files\cookie.png">
+    <script defer src="script.js"></script>
+    <title>Aflevering 1: Cookie Clicker</title>
+</head>
+<body>
+    <div class="GameWindow">
+        <div class="ColumnDisplay">
+            <div class="Column Left" id="cookieAndText">
+                <div>        
+                    <button onclick=ClickCookie() id="cookieButton" class="GreatCookie">
+                        <img src="Files\cookie.png" id="cookieButtonImage"></img>
+                    </button>
+                </div>
+                <div>
+                    <p id="cookiesNoDisplayLine" class="CookieNoDisplay"> Cookies: <span id="cookiesNoDisplay">0</span></p> 
+                    <p id="cookiesPerSecondDisplayLine" class="CookiePersecondDisplay"> Cookies per sekund: <span id="cookiesPerSecondDisplay">0</span></p>
+                </div>
+            </div>
+            <div class="Column Center">
+                <div class="News">
+                    <p class="Breaking">Breaking!</p>
+                    <p id="news"></p>
+                </div>
+                <div id="stats">
+                    <p class="Stat" id="statTime"> Tid spildt: <span id="statTimeDisplay">0</span> sekunder</p>
+                    <p class="Stat" id="statClicks"> Klik: <span id="statClicksDisplay">0</span></p>
+                    <p class="Stat" id="statClickWorth"> Cookies per klik: <span id="statClickWorthDisplay">1</span></p>
+                </div> 
+            </div>
+            <div class="Column Right" id="buildingsAndUpgrades">
+                <div class="Upgrades" id="upgrades">
+                    <p>Opgraderinger</p>
+                </div>
+                <div class="Buildings" id="buildings">
+                    <p>Bygninger</p>
+                </div>          
+            </div>
+        </div>
+    </div>
+</body>
+</html>

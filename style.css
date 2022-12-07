@@ -1,0 +1,113 @@
+p {
+  color: rgb(11, 0, 0);
+}
+
+.Stat {
+  font-size: large;
+  line-height: 90%;
+}
+
+.Stat span {
+  color:midnightblue;
+}
+
+.ColumnDisplay:after {
+  display: table;
+  clear: both;
+}
+
+.Column {
+  float: left;
+  text-align: center;
+  min-height: 600px;
+}
+
+.Column.Left {
+  width: 30%;
+  background-color:#eee;
+  font-size: large;
+}
+
+.Column.Left span {
+  color:midnightblue;
+}
+
+.Column.Center {
+  margin-left: 0.5%;
+  margin-right: 0.5%;
+  width: 49%;
+  background-color:moccasin;
+}
+
+.News {
+  height: 100px;
+  background-color: black;
+  padding-top: 1px;
+}
+
+.News p {
+  color: white;
+}
+
+.Breaking {
+  font-size:x-large;
+  text-decoration: underline;
+  line-height: 20%;
+}
+
+.Column.Right {
+  width: 20%;
+  background-color:thistle;
+  line-height: 0;
+}
+
+.Upgrades {
+  min-height: 135px;
+  background-color: lightblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: scroll;
+  line-height: 0;
+}
+
+.GreatCookie {
+  background: transparent;
+}
+
+.GreatCookie img {
+  width: 80%;
+}
+
+.UpgradeButton {
+  width: 40px;
+  height: 40px;
+  margin: 4px;
+  float: left;
+  display: table-row;
+}
+
+.UpgradeButton img {
+  height: auto;
+  width: 100%;
+}
+
+.BuildingButton {
+  width: 95%;
+  margin-bottom: 4px;
+}
+
+[data-tooltip]:after {
+  position : absolute;
+  display: inline-block;  
+  content : attr(data-tooltip);
+  opacity : 0;
+  white-space: pre-wrap;
+  padding: 4px;
+  background-color: #eee;
+  border: 2px;
+  border-style: double;
+}
+
+[data-tooltip]:hover:after {   
+  opacity : 1;
+}
