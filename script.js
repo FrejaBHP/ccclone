@@ -2,7 +2,7 @@ let cookies = 0;
 let timeCounter = 0;
 let time = 0;
 
-let baseClickValue = 20;
+let baseClickValue = 1;
 let clickMultiplier = 1;
 let cookieMultiplier = 1;
 let totalClickValue = 1;
